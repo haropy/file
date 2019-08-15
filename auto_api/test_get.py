@@ -17,5 +17,12 @@ def request_method():
     print(better_output(response.text))  # 调用json格式化输出
 
 
+def params_method():
+    response = requests.get(build_uri('users'), params={'since': 11})
+    print(better_output(response.text))
+    print(response.headers)
+    print(response.url)
+
+
 if __name__ == '__main__':
     request_method()
