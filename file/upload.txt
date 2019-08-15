@@ -1,0 +1,5 @@
+WinWait("CLASS:#32770","",2)
+ControlFocus("打开","","Edit1")
+ControlSetText("打开","","Edit1","C:\upload\class\26b7342_1200x288.jpg")
+Sleep(2000)
+ControlClick("打开","","Button1")
